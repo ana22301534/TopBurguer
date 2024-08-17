@@ -15,30 +15,32 @@ body{
 #header>h1{
     margin: 0;
 }
-#cadastro{
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 200px;
+    width: 100%;
+}
+.itens{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 80vh;
-    justify-content: center;
-   
+    gap: 20px;
 }
-#cadastro>ul{
-    list-style: none;
-    padding: 0;
-    width: 320px;
+.itens img{
+    width: 25%;
+    height: 50%;
 }
-#cadastro li{
+#botao{
     display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
+    gap: 20px;
+    justify-content: end;
 }
-
-#cadastro>a{
+#botao a{
     background-color: black;
     color: white;
     text-decoration: none;
     height: 2em;
     align-content: center;
+    margin-right: 20px;
+    font-size: 25px;
 }

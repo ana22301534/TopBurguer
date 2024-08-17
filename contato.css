@@ -15,30 +15,46 @@ body{
 #header>h1{
     margin: 0;
 }
-#cadastro{
+main{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    justify-content: center;
-   
 }
-#cadastro>ul{
-    list-style: none;
-    padding: 0;
-    width: 320px;
+#texto{
+    width: 50%;
 }
-#cadastro li{
+#texto p{
+    font-size: 40px;
+    width: 50%;
+}
+.info{
     display: flex;
-    height: 20%;
-    justify-content: space-between;
+    font-size: 40px;
     align-items: center;
+    gap: 20px;
 }
-
-#cadastro>a{
+.info img{
+height: 50%;
+}
+#mensagem textarea{
+    font-size: 18px;
+}
+#mensagem textarea:focus{
+    outline: none;
+    color: black;
+}
+#mensagem textarea::placeholder{
+    color:black;
+}
+#botoes{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+#botoes a{
     background-color: black;
     color: white;
     text-decoration: none;
     height: 2em;
     align-content: center;
+    margin-right: 20px;
+    font-size: 25px;
 }
